@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/bally-gang/static/css/main.9eaa0eaa.chunk.css",
+    "main.js": "/bally-gang/static/js/main.e2606761.chunk.js",
+    "main.js.map": "/bally-gang/static/js/main.e2606761.chunk.js.map",
+    "runtime-main.js": "/bally-gang/static/js/runtime-main.b6cb20df.js",
+    "runtime-main.js.map": "/bally-gang/static/js/runtime-main.b6cb20df.js.map",
+    "static/css/2.f4c56af9.chunk.css": "/bally-gang/static/css/2.f4c56af9.chunk.css",
+    "static/js/2.d8738ce0.chunk.js": "/bally-gang/static/js/2.d8738ce0.chunk.js",
+    "static/js/2.d8738ce0.chunk.js.map": "/bally-gang/static/js/2.d8738ce0.chunk.js.map",
+    "index.html": "/bally-gang/index.html",
+    "static/css/2.f4c56af9.chunk.css.map": "/bally-gang/static/css/2.f4c56af9.chunk.css.map",
+    "static/css/main.9eaa0eaa.chunk.css.map": "/bally-gang/static/css/main.9eaa0eaa.chunk.css.map",
+    "static/js/2.d8738ce0.chunk.js.LICENSE.txt": "/bally-gang/static/js/2.d8738ce0.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/bally-gang/static/media/edosz.0be6a7a2.ttf",
+    "static/media/about.62addcff.webp": "/bally-gang/static/media/about.62addcff.webp",
+    "static/media/about_title.738e63cc.webp": "/bally-gang/static/media/about_title.738e63cc.webp",
+    "static/media/arrow_down.51d2cce6.webp": "/bally-gang/static/media/arrow_down.51d2cce6.webp",
+    "static/media/arrow_right.662c9740.svg": "/bally-gang/static/media/arrow_right.662c9740.svg",
+    "static/media/artist.07fa15fd.jpg": "/bally-gang/static/media/artist.07fa15fd.jpg",
+    "static/media/artist_2.5938cd06.jpg": "/bally-gang/static/media/artist_2.5938cd06.jpg",
+    "static/media/avatar.16822dc1.webp": "/bally-gang/static/media/avatar.16822dc1.webp",
+    "static/media/discrod.16f5b493.webp": "/bally-gang/static/media/discrod.16f5b493.webp",
+    "static/media/inst.4ea4c69d.webp": "/bally-gang/static/media/inst.4ea4c69d.webp",
+    "static/media/jesuses.154eacbd.gif": "/bally-gang/static/media/jesuses.154eacbd.gif",
+    "static/media/loader.f8e163e5.svg": "/bally-gang/static/media/loader.f8e163e5.svg",
+    "static/media/logo.fe3f3d66.webp": "/bally-gang/static/media/logo.fe3f3d66.webp",
+    "static/media/metamask_icon.400afd42.svg": "/bally-gang/static/media/metamask_icon.400afd42.svg",
+    "static/media/mint_bg.b2a7cc45.png": "/bally-gang/static/media/mint_bg.b2a7cc45.png",
+    "static/media/roadmap_title.0cb4a86a.webp": "/bally-gang/static/media/roadmap_title.0cb4a86a.webp",
+    "static/media/team_title.d183d81c.webp": "/bally-gang/static/media/team_title.d183d81c.webp",
+    "static/media/twitter.2291614f.webp": "/bally-gang/static/media/twitter.2291614f.webp",
+    "static/media/wallet_connect_icon.e0d9a9a4.svg": "/bally-gang/static/media/wallet_connect_icon.e0d9a9a4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b6cb20df.js",
+    "static/css/2.f4c56af9.chunk.css",
+    "static/js/2.d8738ce0.chunk.js",
+    "static/css/main.9eaa0eaa.chunk.css",
+    "static/js/main.e2606761.chunk.js"
+  ]
+}
