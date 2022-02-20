@@ -1,17 +1,6 @@
 @import '/src/styles/mixins';
 
 .about {
-  @include b(500) {
-    position: relative;
-    top: -100px;
-    margin-bottom: -100px;
-  }
-}
-
-.arrow {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 75px;
 }
 
 .content {

@@ -2,14 +2,11 @@ import { VFC } from 'react';
 
 import s from './About.module.scss';
 
-import { arrow_down, about_bg, about_title, roadmap_title } from 'assets/img';
+import { about_bg, about_title, roadmap_title } from 'assets/img';
 
 const About: VFC = () => {
   return (
     <section className={s.about}>
-      <div className={s.arrow}>
-        <img src={arrow_down} alt="arrow_down" />
-      </div>
       <div className={s.content}>
         <div className={s.left}>
           <img src={about_bg} alt="about_bg" />

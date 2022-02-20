@@ -11,3 +11,4 @@ export { default as about_title } from './about_title.webp';
 export { default as roadmap_title } from './roadmap_title.webp';
 export { default as team_title } from './team_title.webp';
 export { default as avatar } from './avatar.webp';
+export { default as mint_bg } from './mint_bg.png';
