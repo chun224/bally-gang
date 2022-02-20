@@ -9,13 +9,28 @@ const Header: VFC = () => {
     <header className={s.header}>
       <div className={s.inner}>
         <div className={s.links_inner}>
-          <a href="/" className={s.link}>
+          <a
+            href="https://www.instagram.com/ballygangnft/"
+            target="_blank"
+            rel="noreferrer noopener"
+            className={s.link}
+          >
             <img src={inst} alt="instagram link" />
           </a>
-          <a href="/" className={s.link}>
+          <a
+            target="_blank"
+            rel="noreferrer noopener"
+            href="https://discord.com/invite/7kBeXAFyUy"
+            className={s.link}
+          >
             <img src={ds} alt="discord link" />
           </a>
-          <a href="/" className={s.link}>
+          <a
+            target="_blank"
+            rel="noreferrer noopener"
+            href="https://twitter.com/ballygangnft"
+            className={s.link}
+          >
             <img src={twitter} alt="twitter link" />
           </a>
         </div>

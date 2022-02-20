@@ -29,7 +29,7 @@ const About: VFC = () => {
         </div>
         <div className={s.video}>
           <iframe
-            width="50%"
+            width="100%"
             height="415"
             src="https://www.youtube.com/embed/6TCBjoY8tAM?autoplay=1"
             title="YouTube video player"

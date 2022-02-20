@@ -1,8 +1,9 @@
 import { FC } from 'react';
 import { ToastContainer } from 'react-toastify';
 
-import { Landing } from 'pages';
 import { WalletConnectContext } from 'context';
+
+import { Landing } from 'pages';
 
 export const App: FC = () => {
   return (

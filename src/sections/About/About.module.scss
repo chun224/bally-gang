@@ -1,3 +1,13 @@
+@import '/src/styles/mixins';
+
+.about {
+  @include b(500) {
+    position: relative;
+    top: -100px;
+    margin-bottom: -100px;
+  }
+}
+
 .arrow {
   display: flex;
   justify-content: center;
@@ -7,11 +17,15 @@
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  @include b(1000) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .left {
   img {
     max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -25,6 +39,10 @@
 
   img {
     max-width: 424px;
+    @include b(700) {
+      padding: 0 15px;
+      max-width: 100%;
+    }
   }
 }
 
@@ -36,6 +54,10 @@
   font-size: 22px;
   line-height: 1.5;
   max-width: 500px;
+  @include b(600) {
+    font-size: 18px;
+    text-align: justify;
+  }
 }
 
 // ROADMAP
@@ -46,10 +68,18 @@
   margin-bottom: 25px;
   img {
     max-width: 424px;
+    @include b(700) {
+      padding: 0 15px;
+      max-width: 100%;
+    }
   }
 }
 
 .video {
-  display: flex;
-  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+  @include b(700) {
+    padding: 0 15px;
+    width: 100%;
+  }
 }

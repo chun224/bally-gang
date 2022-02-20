@@ -2,6 +2,8 @@ import { VFC } from 'react';
 
 import { data } from './Team.helper';
 
+import { team_title } from 'assets';
+
 import s from './Team.module.scss';
 
 interface ITeamItemProps {
@@ -25,6 +27,9 @@ const TeamItem: VFC<ITeamItemProps> = ({ title, subtitle, image }) => {
 const Team: VFC = () => {
   return (
     <section className={s.section}>
+      <div className={s.sectionTitle}>
+        <img src={team_title} alt="team" />
+      </div>
       <div className={s.inner}>
         <ul className={s.list}>
           {data.map(({ title, subtitle, image }) => (

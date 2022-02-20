@@ -12,9 +12,13 @@
 
 .list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 150px;
   grid-column-gap: 100px;
+  @include b(800) {
+    gap: 50px;
+    grid-column-gap: 30px;
+  }
 }
 
 // LIST ITEM

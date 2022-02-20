@@ -1,7 +1,8 @@
 import { VFC } from 'react';
 
+import { About, FirstBlock, Roadmap, Team } from 'sections';
+
 import { Header } from 'components';
-import { FirstBlock, About, Roadmap } from 'sections';
 
 const Landing: VFC = () => {
   return (
@@ -11,6 +12,7 @@ const Landing: VFC = () => {
         <FirstBlock />
         <About />
         <Roadmap />
+        <Team />
       </main>
     </>
   );

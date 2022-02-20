@@ -4,19 +4,17 @@ export const is_production = true;
 
 export const polygonProvider = {
   network: {
-    chainID: is_production ? 137 : 80001,
-    chainName: is_production ? 'Polygon' : 'Polygon testnet',
+    chainID: is_production ? 1 : 4,
+    chainName: is_production ? 'Ethereum' : 'Rinkeby',
     nativeCurrency: {
-      name: 'MATIC',
-      symbol: 'MATIC',
+      name: 'ETH',
+      symbol: 'ETH',
       decimals: 18,
     },
     rpc: is_production
-      ? 'https://rpc-mainnet.maticvigil.com/'
-      : 'https://matic-mumbai.chainstacklabs.com',
-    blockExplorerUrl: is_production
-      ? 'https://explorer.matic.network/'
-      : 'https://mumbai.polygonscan.com/',
+      ? 'https://mainnet.infura.io/v3/e30174475e4b42bc9daab0cb45748b9c'
+      : 'https://rinkeby.infura.io/v3/e30174475e4b42bc9daab0cb45748b9c',
+    blockExplorerUrl: is_production ? 'https://etherscan.io/' : 'https://rinkeby.etherscan.io/',
   },
   provider: {
     MetaMask: { name: 'MetaMask' },
@@ -26,11 +24,11 @@ export const polygonProvider = {
       provider: {
         rpc: {
           rpc: {
-            [is_production ? 137 : 80001]: is_production
-              ? 'https://rpc-mainnet.maticvigil.com/'
-              : 'https://matic-mumbai.chainstacklabs.com',
+            [is_production ? 1 : 4]: is_production
+              ? 'https://mainnet.infura.io/v3/e30174475e4b42bc9daab0cb45748b9c'
+              : 'https://rinkeby.infura.io/v3/e30174475e4b42bc9daab0cb45748b9c',
           },
-          chainId: is_production ? 137 : 80001,
+          chainId: is_production ? 1 : 4,
         },
       },
     },
