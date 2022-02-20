@@ -1,0 +1,55 @@
+.arrow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 75px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left {
+  img {
+    max-width: 100%;
+  }
+}
+
+.right {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+
+  img {
+    max-width: 424px;
+  }
+}
+
+.right_title {
+  margin-bottom: 50px;
+}
+
+.text {
+  font-size: 22px;
+  line-height: 1.5;
+  max-width: 500px;
+}
+
+// ROADMAP
+.roadmap_title {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+  margin-bottom: 25px;
+  img {
+    max-width: 424px;
+  }
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+}
