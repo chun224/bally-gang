@@ -1,12 +1,13 @@
-import { FC, createContext, useCallback, useContext, useState, useEffect } from 'react';
-import BigNumber from 'bignumber.js/bignumber';
+import { createContext, FC, useCallback, useContext, useEffect, useState } from 'react';
 
-import { WalletConnect, ContractService } from 'services';
-import { notify } from 'utils';
-import { polygonProvider, contractConfig } from 'config';
+import BigNumber from 'bignumber.js/bignumber';
 import { Subscription } from 'rxjs';
 
-import { TxHash, MintSuccess, OfferToBuy } from 'components';
+import { MintSuccess, OfferToBuy, TxHash } from 'components';
+import { contractConfig, polygonProvider } from 'config';
+import { notify } from 'utils';
+
+import { ContractService, WalletConnect } from 'services';
 
 type IProviders = 'MetaMask' | 'WalletConnect';
 
@@ -21,6 +22,8 @@ interface IContextValue {
   mintedAmount: number;
   userNftBalance: number;
   isMinting: boolean;
+  isModalOpen: boolean;
+  setIsModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const Web3Context = createContext({} as IContextValue);
@@ -28,6 +31,8 @@ const Web3Context = createContext({} as IContextValue);
 const WalletConnectContext: FC = ({ children }) => {
   const [account, setAccount] = useState<any>();
   const [currentSubsriber, setCurrentSubscription] = useState<Subscription>();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   // NFT info
   const [pricePerToken, setPricePerToken] = useState(0);
   const [maxSupply, setMaxSupply] = useState(0);
@@ -59,7 +64,7 @@ const WalletConnectContext: FC = ({ children }) => {
   const connect = useCallback(
     async (provider: IProviders) => {
       if (provider === 'MetaMask' && !window.ethereum) {
-        notify('Please install MetaMask!', 'error');
+        setIsModalOpen(true);
       }
       const connected = await WalletConnect.initWalletConnect(provider);
       if (connected) {
@@ -222,6 +227,8 @@ const WalletConnectContext: FC = ({ children }) => {
         maxSupply,
         mintedAmount,
         userNftBalance,
+        isModalOpen,
+        setIsModalOpen,
       }}
     >
       {children}

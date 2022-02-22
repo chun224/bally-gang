@@ -3,6 +3,7 @@ import { useCallback, useState, VFC } from 'react';
 import { useWcContext } from 'context';
 
 import { Button } from 'components';
+import WalletsModal from 'components/WalletsModal/WalletsModal';
 import { notify } from 'utils';
 
 import { mint_bg } from 'assets/img';
@@ -11,8 +12,16 @@ import s from './MintSection.module.scss';
 
 const MintSection: VFC = () => {
   const [value, setValue] = useState(1);
-  const { mint, isMinting, pricePerToken, maxSupply, mintedAmount, account, userNftBalance } =
-    useWcContext();
+  const {
+    mint,
+    isMinting,
+    pricePerToken,
+    maxSupply,
+    mintedAmount,
+    account,
+    userNftBalance,
+    isModalOpen,
+  } = useWcContext();
 
   const handleMint = useCallback(async () => {
     try {
@@ -25,6 +34,7 @@ const MintSection: VFC = () => {
 
   return (
     <section className={s.section}>
+      <WalletsModal isOpen={isModalOpen} />
       <div className={s.left}>
         <div className={s.mint}>
           <div className={s.title}>Mint Your Bally Gang NFT! </div>

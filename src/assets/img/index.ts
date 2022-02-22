@@ -12,3 +12,5 @@ export { default as roadmap_title } from './roadmap_title.webp';
 export { default as team_title } from './team_title.webp';
 export { default as avatar } from './avatar.webp';
 export { default as mint_bg } from './mint_bg.png';
+export { default as mm_logo } from './mm_logo.svg';
+export { default as cb_logo } from './cb_logo.svg';
