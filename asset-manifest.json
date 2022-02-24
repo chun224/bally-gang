@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/bally-gang/static/css/main.4791261f.chunk.css",
-    "main.js": "/bally-gang/static/js/main.9128f380.chunk.js",
-    "main.js.map": "/bally-gang/static/js/main.9128f380.chunk.js.map",
+    "main.js": "/bally-gang/static/js/main.7ce5ff4e.chunk.js",
+    "main.js.map": "/bally-gang/static/js/main.7ce5ff4e.chunk.js.map",
     "runtime-main.js": "/bally-gang/static/js/runtime-main.b6cb20df.js",
     "runtime-main.js.map": "/bally-gang/static/js/runtime-main.b6cb20df.js.map",
     "static/css/2.f4c56af9.chunk.css": "/bally-gang/static/css/2.f4c56af9.chunk.css",
@@ -39,6 +39,6 @@
     "static/css/2.f4c56af9.chunk.css",
     "static/js/2.4987760e.chunk.js",
     "static/css/main.4791261f.chunk.css",
-    "static/js/main.9128f380.chunk.js"
+    "static/js/main.7ce5ff4e.chunk.js"
   ]
 }
