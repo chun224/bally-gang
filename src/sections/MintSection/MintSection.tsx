@@ -32,6 +32,15 @@ const MintSection: VFC = () => {
     }
   }, [mint, value]);
 
+  const handleChangeValue = useCallback(
+    (newValue: number) => {
+      if (newValue > 0) {
+        setValue(newValue);
+      }
+    },
+    [setValue],
+  );
+
   return (
     <section className={s.section}>
       <WalletsModal isOpen={isModalOpen} />
@@ -66,7 +75,7 @@ const MintSection: VFC = () => {
               role="button"
               tabIndex={0}
               onKeyDown={() => {}}
-              onClick={() => setValue(value - 1)}
+              onClick={() => handleChangeValue(value - 1)}
               className={s.change}
             >
               -
@@ -76,7 +85,7 @@ const MintSection: VFC = () => {
               role="button"
               tabIndex={0}
               onKeyDown={() => {}}
-              onClick={() => setValue(value + 1)}
+              onClick={() => handleChangeValue(value + 1)}
               className={s.change}
             >
               +
